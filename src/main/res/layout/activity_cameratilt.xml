@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--<com.jb.jb762camera.MySurfaceView
+             />-->
+        <in.entrylog.entrylog.main.camera.MySurfaceView
+            android:id="@+id/sv"
+            android:layout_width="427dp"
+            android:layout_height="435dp" />
+
+        <!-- <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:id="@+id/iv"/>-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/iv"
+            android:layout_weight="0.31" />
+       <!-- <in.entrylog.entrylog.main.camera.MySurfaceView
+            android:id="@+id/sv"
+            android:layout_width="384dp"
+            android:layout_height="640dp"
+            android:layout_weight="0.05" />
+
+       &lt;!&ndash; <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv"/>&ndash;&gt;
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv"/>-->
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ll"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/take_pi_btn"
+            android:layout_width="94dp"
+            android:layout_height="83dp"
+            android:text="TAKEPIC"
+            android:src="@mipmap/camera_click"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="light"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="94dp"
+                android:layout_height="83dp"
+                android:saveEnabled="true"
+                android:text="DONE"
+                android:layout_weight="1"
+                android:src="@mipmap/camera_click_ok"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                />
+
+            <ImageButton
+                android:layout_width="94dp"
+                android:text="CANCEL"
+                android:src="@mipmap/camera_click_cancel"
+                android:id="@+id/cancel_camera"
+                android:layout_weight="1"
+                android:layout_height="83dp"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

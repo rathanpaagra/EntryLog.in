@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.adhocVisitors.AdhocVisitorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/blockslinear"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="8dp"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/blockslinear"
+            android:layout_marginTop="95dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/add_adhoc_visitors_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/addvisitors_black"
+                android:text="ADD ADHOC VISITORS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/adhoc_visitors_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/visitors_black"
+                android:text="ADHOC VISITORS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
+
+
+
+
+            <!--<Button
+                android:id="@+id/manually_checkout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/manualcheckout_black"
+                android:text="APPOINMENTS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/checkout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/visitorscheckout_black"
+                android:text="VISITORS CHECKOUT"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
